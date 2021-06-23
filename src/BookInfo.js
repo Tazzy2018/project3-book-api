@@ -1,6 +1,6 @@
 function BookInfo(props) {
     return (
-        <div>
+        <>
             {/* <h2>{props.title}</h2> */}
 
 
@@ -10,7 +10,7 @@ function BookInfo(props) {
 
             
 
-            <div className='wrapper'>
+            <div className='book-wrapper'>
 
                 <img src={props.imgPath} className='cover' alt='book cover' />
 
@@ -22,6 +22,8 @@ function BookInfo(props) {
                 <p>{props.description}</p>
                 
                 <h3>Author: {props.author}</h3>
+
+               
 
                 
 
@@ -95,7 +97,7 @@ function BookInfo(props) {
         
 
             
-        </div>
+        </>
 
         
     );

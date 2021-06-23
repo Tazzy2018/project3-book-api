@@ -50,6 +50,9 @@ useEffect(() => {
 
 return (
     <div className="App">
+       
+       <div className='wrapper'>
+
       <h1>Best Sellers Right Now</h1>
 
       
@@ -77,8 +80,12 @@ return (
   
 }, [])}
 
+     </div>
+
       <Footer />
 
+
+     
 
     </div>
 
