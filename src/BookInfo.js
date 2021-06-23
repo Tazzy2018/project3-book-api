@@ -51,6 +51,7 @@ function BookInfo(props) {
                 }) 
 
                 }
+            
 
 
             </div>
@@ -86,8 +87,13 @@ function BookInfo(props) {
             {/* <h4>{props.buy_links[0].url}</h4> */}
         
 
+            
         </div>
-    )
+
+        
+    );
+
 }
+
 
 export default BookInfo

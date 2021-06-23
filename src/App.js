@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import BookInfo from './BookInfo';
+import Footer from './Footer';
 
 
 
@@ -67,23 +68,31 @@ return (
           title={book.title}
           description={book.description}
           author={book.author}
-          // amazon_product_url={book.amazon_product_url}
           buy_links={book.buy_links}
-          
-          
+
           />
           
-        )
+        );
 
   
 }, [])}
 
+      <Footer />
+
+
     </div>
+
 
     );
 
+    
   
 }
+
+
+
+
+
 
 
 export default App;
