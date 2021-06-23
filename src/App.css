@@ -56,7 +56,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 body {
-  background-color:black;
+  background-color: rgb(91, 36, 219);
 }
 
 
@@ -83,6 +83,7 @@ h1 {
 
 }
 
+
 .number {
   font-size: 40px;
   color: white;
@@ -94,13 +95,15 @@ h1 {
 
 li {
   list-style: none;
-  display: inline;
-  float: left;
-  
+}
+
+.buy-menu {
+  margin-left: 5%;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 button {
@@ -108,6 +111,7 @@ button {
   margin-top: 10px;
   padding: 4px;
   border-radius: 10px;
+  background-color:white;
   
 
 }
@@ -117,6 +121,12 @@ button :hover {
   
 }
 
+.title {
+  text-align: center;
+}
+
+
+
 
 p {
   font-size: 18px;
@@ -125,25 +135,19 @@ p {
   margin-left: 1%;
   /* font-family: 'Caveat',
   cursive; */
- 
   
 }
 
 
-/* .box {
-  border: 2px solid white;
-  width: 60%;
-
-} */
 
 h2 {
-  color: red;
   margin-top: 5%;
   text-align: center;
   font-family: 'Cinzel',
   serif;
   color: white;
   text-decoration: underline;
+ 
   
 }
 
@@ -159,4 +163,28 @@ h3 {
   left: 0;
   width: 100%;
 }
+
+
+@media (max-width: 600px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+  
+  }
+
+
+  li {
+    margin-left: 5%;
+    display: inline-block;
+    
+  }
+
+ 
+
+ 
+
+}
+
 

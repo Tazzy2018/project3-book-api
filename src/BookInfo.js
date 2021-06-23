@@ -8,16 +8,19 @@ function BookInfo(props) {
             <h3>{props.rank}</h3>
             </div>
 
+            
+
             <div className='wrapper'>
 
-            <img src={props.imgPath} className='cover' alt='book cover' />
+                <img src={props.imgPath} className='cover' alt='book cover' />
+
+        
             <div className='box' alt='outline of book'>
 
                 <h2>{props.title}</h2>
 
                 <p>{props.description}</p>
                 
-
                 <h3>Author: {props.author}</h3>
 
                 
@@ -34,7 +37,10 @@ function BookInfo(props) {
 
         </form> */}
 
+            
+
             {
+                
                 props.buy_links.map(link => {
                     return (
                        <div className = 'buy-menu'>
@@ -45,6 +51,7 @@ function BookInfo(props) {
                             </button>
                         </li>
                         </div>
+                    
                        
                     )
 
