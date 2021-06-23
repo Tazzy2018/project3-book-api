@@ -53,7 +53,7 @@ return (
        
        <div className='wrapper'>
 
-      <h1>New York Times Best Sellars</h1>
+      <h1>New York Times Best Sellers</h1>
 
       
 
