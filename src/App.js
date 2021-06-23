@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import BookInfo from './BookInfo';
-// import BuyLinks from './BuyLinks';
+
+
 
 function App() {
   const [books, setBooks] = useState ([]
@@ -38,6 +39,7 @@ useEffect(() => {
       
       setBooks(response.data.results.books);
       
+     
 
     })
 
@@ -47,48 +49,35 @@ useEffect(() => {
 
 return (
     <div className="App">
-      <h1>best sellers test</h1>
+      <h1>Best Sellers Right Now</h1>
+
+      
 
       {console.log(books)}
 
       {books.map((book) => {
         
         return (
-          <BookInfo 
+
+
+          <BookInfo
 
           rank={book.rank}
           imgPath={book.book_image}
           title={book.title}
           description={book.description}
           author={book.author}
-          amazon_product_url={book.amazon_product_url}
+          // amazon_product_url={book.amazon_product_url}
           buy_links={book.buy_links}
-          first_chapter_link={book.first_chapter_link}
+          
           
           />
           
         )
+
   
 }, [])}
 
-
-{/* {console.log(buy_links)}
-
-{buy_links.map((buy_link) => {
-
-return (
-  <BuyLinks 
-  buy_links={buy_link.buy_links}
-
-  />
-
-)
-
-}, [])}
- */}
-
-
-      
     </div>
 
     );
