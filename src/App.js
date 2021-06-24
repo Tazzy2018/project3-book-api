@@ -14,17 +14,6 @@ function App() {
 
 useEffect(() => {
 
-//             const url = new URL ('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json');
-
-//             url.search = new URLSearchParams({
-//                 'api-key': 'iRwYQdOHnKEGRd39PtcMvGMutmjHZZIt'
-                
-            
-
-//             });
-
-// }
-
 
     axios({
       url: 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json',
@@ -36,7 +25,7 @@ useEffect(() => {
     }
       
     }).then ((response) => {
-      // console.log(response.data.results.books);
+      
       
       setBooks(response.data.results.books);
       
@@ -68,10 +57,12 @@ return (
 
           rank={book.rank}
           imgPath={book.book_image}
+          weeks_on_list={book.weeks_on_list}
           title={book.title}
           description={book.description}
           author={book.author}
           buy_links={book.buy_links}
+          
 
           />
           
@@ -80,12 +71,9 @@ return (
   
 }, [])}
 
-     </div>
+    </div>
 
       <Footer />
-
-
-     
 
     </div>
 

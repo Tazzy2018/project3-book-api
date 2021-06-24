@@ -16,13 +16,22 @@ function BookInfo(props) {
         
             <div className='box' alt='outline of book'>
 
+                <h4>Duration of weeks on the list: {props.weeks_on_list}</h4>
+
                 <h2>{props.title}</h2>
 
+                
+
                 <p>{props.description}</p>
+
                 
                 <h3>Author: {props.author}</h3>
 
-            
+               
+
+
+                <h4>You can buy this book from the links below:</h4>
+
 
             
 
