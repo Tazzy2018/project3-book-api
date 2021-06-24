@@ -44,9 +44,6 @@ return (
 
       <h1>New York Times Best Sellers</h1>
 
-      
-
-      {console.log(books)}
 
       {books.map((book) => {
         
@@ -83,11 +80,6 @@ return (
     
   
 }
-
-
-
-
-
 
 
 export default App;
